@@ -1,16 +1,30 @@
-# kigali_city_app
+# Kigali City Services & Places Directory
 
-A new Flutter project.
+A Flutter mobile app that allows users to discover and contribute to a directory of services and places in Kigali, Rwanda.
 
-## Getting Started
+## Features
+- User authentication (signup, login, email verification)
+- Browse and search listings by category
+- Add, edit, and delete your own listings
+- View listing details with contact and navigation options
+- Leave reviews and ratings
+- Location-based services
+- Dark mode support
 
-This project is a starting point for a Flutter application.
+## Firebase Integration
+- **Firebase Authentication** - Email/password authentication with email verification
+- **Cloud Firestore** - Real-time database for listings and reviews
 
-A few resources to get you started if this is your first Flutter project:
+## Firestore Database Structure
+- **users** - User profiles (uid, email, displayName, createdAt)
+- **listings** - Place listings (name, category, address, description, contactNumber, latitude, longitude, createdBy, rating, reviewCount)
+- **reviews** - User reviews (listingId, userId, userName, rating, comment, createdAt)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## State Management
+Provider package is used for state management following the MVVM pattern:
+- **AuthProvider** - Manages authentication state
+- **ListingProvider** - Manages listings data and filtering
+- **SettingsProvider** - Manages app settings
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Architecture
+UI ? Provider ? Service ? Firebase
