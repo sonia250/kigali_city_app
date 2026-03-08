@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "930442031300",
+    "project_id": "kjy-c2410",
+    "storage_bucket": "kjy-c2410.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930442031300:android:2d6018e476b7329ae3d991",
+        "android_client_info": {
+          "package_name": "com.example.kigali_city_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqOqX7_Nj1GhDSpTbZNL56E1bcD4eKbJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
